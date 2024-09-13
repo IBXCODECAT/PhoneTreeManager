@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">PhoneTreeManager</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">Phone Tree Manager</string>
+    <string name="author">Nathan Schmitt</string>
+    
+    <string name="title_inbound_calls">Inbound</string>
+    <string name="title_parked_calls">Parked</string>
+    <string name="title_held_calls">On Hold</string>
 </resources>

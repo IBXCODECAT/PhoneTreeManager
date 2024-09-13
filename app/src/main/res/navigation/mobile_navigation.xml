@@ -3,23 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_inbound_calls">
+    
+    <fragment
+        android:id="@+id/navigation_held_calls"
+        android:name="com.nathan.phonetreemanager.ui.held_calls.HeldCallsFragment"
+        android:label="@string/title_held_calls"
+        tools:layout="@layout/held_calls_fragment" />
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.nathan.phonetreemanager.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_inbound_calls"
+        android:name="com.nathan.phonetreemanager.ui.inbound_calls.InboundCallsFragment"
+        android:label="@string/title_inbound_calls"
+        tools:layout="@layout/inbound_calls_fragment" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.nathan.phonetreemanager.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_parked_calls"
+        android:name="com.nathan.phonetreemanager.ui.parked_calls.ParkedCallsFragment"
+        android:label="@string/title_parked_calls"
+        tools:layout="@layout/parked_calls_fragment" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.nathan.phonetreemanager.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>
