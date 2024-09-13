@@ -1,8 +1,17 @@
 <resources>
+    <!--Application Metadata-->
     <string name="app_name">Phone Tree Manager</string>
     <string name="author">Nathan Schmitt</string>
-    
-    <string name="title_inbound_calls">Inbound</string>
-    <string name="title_parked_calls">Parked</string>
-    <string name="title_held_calls">On Hold</string>
+
+    <!--On Hold Calls-->
+    <string name="navigation_held_calls">On Hold</string>
+    <string name="title_held_calls">Calls on Hold</string>
+
+    <!--Inbound Calls-->
+    <string name="navigation_inbound_calls">Inbound</string>
+    <string name="title_inbound_calls">Inbound Calls</string>
+
+    <!--Parked Calls-->
+    <string name="navigation_parked_calls">Parked</string>
+    <string name="title_parked_calls">Parked Calls</string>
 </resources>

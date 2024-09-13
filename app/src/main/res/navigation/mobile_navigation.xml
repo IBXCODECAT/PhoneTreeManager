@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/navigation_inbound_calls">
-    
+
     <fragment
         android:id="@+id/navigation_held_calls"
         android:name="com.nathan.phonetreemanager.ui.held_calls.HeldCallsFragment"

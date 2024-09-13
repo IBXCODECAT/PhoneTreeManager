@@ -3,15 +3,15 @@
     <item
         android:id="@+id/navigation_held_calls"
         android:icon="@android:drawable/stat_sys_phone_call_on_hold"
-        android:title="@string/title_held_calls" />
+        android:title="@string/navigation_held_calls" />
 
     <item
         android:id="@+id/navigation_inbound_calls"
         android:icon="@android:drawable/sym_call_incoming"
-        android:title="@string/title_inbound_calls" />
+        android:title="@string/navigation_inbound_calls" />
 
     <item
         android:id="@+id/navigation_parked_calls"
         android:icon="@android:drawable/stat_sys_phone_call_forward"
-        android:title="@string/title_parked_calls" />
+        android:title="@string/navigation_parked_calls" />
 </menu>
