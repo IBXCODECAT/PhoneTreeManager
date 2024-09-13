@@ -7,6 +7,7 @@
     tools:context=".ui.held_calls.HeldCallsFragment">
 
     <ListView
+        android:id="@+id/held_call_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:drawSelectorOnTop="false" />
