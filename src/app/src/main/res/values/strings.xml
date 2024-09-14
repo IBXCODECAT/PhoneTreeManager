@@ -15,4 +15,14 @@
     <string name="navigation_parked_calls">Parked</string>
     <string name="title_parked_calls">Parked Calls</string>
     <string name="copyright">Copyright © 2024 Nathan Schmitt</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone_number_template">+# (###)-###-####</string>
+    <string name="date_template">MM/DD/YYYY</string>
+    <string name="time_template">HH:MM:SS</string>
+
+    <array name="departments">
+        <item>Meat</item>
+        <item>Produce</item>
+    </array>
 </resources>

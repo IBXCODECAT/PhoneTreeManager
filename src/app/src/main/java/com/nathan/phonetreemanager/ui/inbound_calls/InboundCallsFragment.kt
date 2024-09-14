@@ -4,8 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import com.nathan.phonetreemanager.CallModalFragment
+import com.nathan.phonetreemanager.R
 import com.nathan.phonetreemanager.databinding.InboundCallsFragmentBinding
 
 class InboundCallsFragment : Fragment() {
@@ -26,10 +33,25 @@ class InboundCallsFragment : Fragment() {
 
         // Set up the ListView and its adapter
         val listView = binding.inboundCallList
+
+
         val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, itemsList)
         listView.adapter = adapter
 
+        listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+
+            val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+
+            // Create and show the dialog.
+            val callModalFragment: CallModalFragment = CallModalFragment()
+
+            callModalFragment.show(transaction, "dialog"   )
+
+
+        }
+
         // Optionally add items to the list
+        itemsList.clear()
         itemsList.add("Inbound Call " + (itemsList.count() + 1).toString())
         itemsList.add("Inbound Call " + (itemsList.count() + 1).toString())
         itemsList.add("Inbound Call " + (itemsList.count() + 1).toString())

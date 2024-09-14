@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modalCallInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CallModalFragment">
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@android:string/emptyPhoneNumber"
+        android:baselineAligned="false"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/phone_number_template"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutHDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/date_template"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/date_template"
+            android:inputType="date"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/time_template"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/time_template"
+            android:inputType="time"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
