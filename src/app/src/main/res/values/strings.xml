@@ -14,4 +14,5 @@
     <!--Parked Calls-->
     <string name="navigation_parked_calls">Parked</string>
     <string name="title_parked_calls">Parked Calls</string>
+    <string name="copyright">Copyright © 2024 Nathan Schmitt</string>
 </resources>
